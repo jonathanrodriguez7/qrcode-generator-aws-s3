@@ -1,29 +1,29 @@
-# 🚀 QR Code Generator API (AWS + Docker)
+# QR Code Generator API (AWS + Docker)
 
 API REST desenvolvida em **Java com Spring Boot** para geração de QR Codes e upload automático para o **Amazon S3**, utilizando boas práticas de arquitetura backend e containerização com Docker.
 
 ---
 
-## 🧰 Tecnologias utilizadas
+##  Tecnologias utilizadas
 
-* ☕ Java 21
-* 🌱 Spring Boot
-* 🐳 Docker
-* ☁️ Amazon S3 (AWS)
-* 📦 Maven
-
----
-
-## 🧠 Funcionalidades
-
-* ✅ Geração de QR Code a partir de texto ou URL
-* ✅ Upload automático da imagem para o S3
-* ✅ Retorno da URL pública do QR Code
-* ✅ API REST para integração com frontend
+*  Java 21
+*  Spring Boot
+*  Docker
+*  Amazon S3 (AWS)
+*  Maven
 
 ---
 
-## 🏗️ Arquitetura
+##  Funcionalidades
+
+*  Geração de QR Code a partir de texto ou URL
+*  Upload automático da imagem para o S3
+*  Retorno da URL pública do QR Code
+*  API REST para integração com frontend
+
+---
+
+##  Arquitetura
 
 O projeto foi estruturado utilizando conceitos de:
 
@@ -39,9 +39,9 @@ O projeto foi estruturado utilizando conceitos de:
 
 ---
 
-## ⚙️ Como executar o projeto
+##  Como executar o projeto
 
-### 🔧 1. Build da aplicação
+###  1. Build da aplicação
 
 ```bash
 mvn clean package
@@ -49,7 +49,7 @@ mvn clean package
 
 ---
 
-### 🐳 2. Build da imagem Docker
+###  2. Build da imagem Docker
 
 ```bash
 docker build -t qrcode-generator .
@@ -57,7 +57,7 @@ docker build -t qrcode-generator .
 
 ---
 
-### 🚀 3. Executar container
+###  3. Executar container
 
 ```bash
 docker run -p PORTA \
@@ -70,15 +70,15 @@ qrcode-generator
 
 ---
 
-## 🧪 Testando a API
+##  Testando a API
 
-### 📌 Endpoint
+###  Endpoint
 
 ```http
 POST /qrcode
 ```
 
-### 📥 Request (JSON)
+###  Request (JSON)
 
 ```json
 {
@@ -86,7 +86,7 @@ POST /qrcode
 }
 ```
 
-### 📤 Response (exemplo)
+###  Response (exemplo)
 
 ```json
 {
@@ -96,14 +96,14 @@ POST /qrcode
 
 ---
 
-## ☁️ Integração com AWS
+## Integração com AWS
 
 * Upload de arquivos no Amazon S3
 * Uso de variáveis de ambiente para segurança
 * Configuração de região e bucket
 
 
-## 📌 Aprendizados
+##  Aprendizados
 
 Este projeto foi desenvolvido com foco em prática real de mercado:
 
@@ -114,9 +114,9 @@ Este projeto foi desenvolvido com foco em prática real de mercado:
 
 ---
 
-## 🔮 Melhorias futuras
+## Melhorias futuras
 
-* 🔐 Autenticação com JWT
-* ☁️ Deploy em AWS (EC2 / ECS)
-* 📦 Cache de QR Codes
-* ⚡ Processamento assíncrono
+*  Autenticação com JWT
+*  Deploy em AWS (EC2 / ECS)
+*  Cache de QR Codes
+*  Processamento assíncrono
